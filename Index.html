@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portofolio</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/a40b846cb1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <img src="/images/Lilian..png" alt="" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portofolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>FullStack Developer</p>
+            <h1>Hi, I'm <span>Liliane</span><br> Iradukunda from Rwanda</h1>
+        </div>
+    </div>
+   </div>
+   <!-------about-------->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+        <div class="about-col-1">
+            <img src="/assets/lily.jpeg">
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, amet ipsum, 
+                perspiciatis cupiditate asperiores nostrum nulla consequuntur quibusdam voluptatibus ea commodi enim! 
+                Molestias voluptatibus, molestiae animi voluptas distinctio iusto similique?</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"  onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front-End Development Skills</span><br> HTML/CSS,Js, React and Next.js</li>
+                        <li><span>Back-End Development Skills</span><br> JavaScript (Node.js),Spring Boot(Java)<br>Database Management: NoSQL Databases: MongoDB, DynamoDB </li>
+                        <li><span>DevOps & Deployment</span><br> Version Control/Git: Collaboration using GitHub, GitLab, or Bitbucket.
+                            <br>CI/CD Pipelines: Implementing Continuous Integration and Continuous Deployment using tools like Jenkins, GitHub Actions, or GitLab CI.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023-2024</span><br>AEM Developer at Codeland s.r.l</li>
+                        <li><span>2022-2023</span><br> Software Engineer at the GYM</li>
+                        <li><span>2021-2022</span><br> Software Engineer at SOLVIT AFRICA</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019-2022</span><br>Information System Management at Davis College Akilah Campus</li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    </div>
+   </div>
+   <!------services----->
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Front-End Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     provident itaque! Alias dolorem excepturi eligendi tempore nam vel et.</p>
+                <a href="">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Back-End Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     provident itaque! Alias dolorem excepturi eligendi tempore nam vel et.</p>
+                <a href="">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Testing & Debugging</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     provident itaque! Alias dolorem excepturi eligendi tempore nam vel et.</p>
+                <a href="">Learn More</a>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!----Portofolio-->
+   <div id="portofolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="/images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nobis at quae eveniet illum atque.</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/images/work-2.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nobis at quae eveniet illum atque.</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="/images/work-3.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nobis at quae eveniet illum atque.</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="btn" href="">See More</a>
+   </div>
+   <!------Contacts ----->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>LilianeIradukunda7@gmail.com</p>
+                <p>+250787507249</p>
+                <div class="social-icons">
+                   <a href=""><i class="fa-brands fa-facebook"></i></a>
+                   <a href="https://www.instagram.com/iradukunda_lilianee/profilecard/?igsh=OWtmaTltOWFpYXVv"><i class="fa-brands fa-instagram"></i></a>
+                   <a href="https://www.linkedin.com/in/iradukunda-lilian/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" name="email" placeholder="Your Message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+   </div>
+   <script>
+     var tabLinks = document.getElementsByClassName("tab-links");
+     var tabContents = document.getElementsByClassName("tab-contents");
+
+     function opentab(tabname){
+        for(tabLink of tabLinks){
+            tabLink.classList.remove("active-link")
+        }
+        for(tabContent of tabContents){
+            tabContent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+   </script>
+</body>
+</html>
