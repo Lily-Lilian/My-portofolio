@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portofolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
     <script src="https://kit.fontawesome.com/a40b846cb1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-   <div id="header">
+   <div id="header" class="header">
     <div class="container">
-        <nav>
+        <nav class="navbar">
             <img src="/images/Liliane.png" alt="" class="logo">
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
@@ -22,14 +23,17 @@
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
+        <section class="home" id="home">
         <div class="header-text">
-            <p>FullStack Developer</p>
-            <h1>Hi, I'm <span>Liliane</span><br> Iradukunda from Rwanda</h1>
+            <h3 class="heading">Hi, It's Me</h3>
+            <h1> Liliane Iradukunda</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
         </div>
+    </section>
     </div>
    </div>
    <!-------about-------->
-   <div id="about">
+   <div id="about" class="about">
     <div class="container">
         <div class="row">
         <div class="about-col-1">
@@ -70,61 +74,63 @@
     </div>
    </div>
    <!------services----->
-   <div id="services">
+   <section class="services" id="services">
     <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
+        <h2 class="sub-title">My <span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
                 <i class="fa-solid fa-code"></i>
-                <h2>Front-End Development</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     provident itaque! Alias dolorem excepturi eligendi tempore nam vel et.</p>
-                <a href="">Learn More</a>
+                <h3>Web Development</h3>
+                <p>Building responsive and high-performance web applications using modern frameworks (e.g., React, Next.js).</p>
+                <p>Developing server-side APIs with Java, Node.js, or other backend technologies.</p>
+                <p>Creating scalable and maintainable front-end architectures.</p>
             </div>
-            <div>
-                <i class="fa-solid fa-crop"></i>
-                <h2>Back-End Development</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     provident itaque! Alias dolorem excepturi eligendi tempore nam vel et.</p>
-                <a href="">Learn More</a>
+            <div class="services-box">
+                <i class="fa-solid fa-barcode"></i>
+                <h3>API Integration</h3>
+                <p>Integrating third-party APIs (social media, payment gateways, etc.).</p>
+                <p>Creating custom APIs for seamless communication between front-end and back-end systems.</p>
+                <p>Expertise in handling API authentication and security.</p>
             </div>
-            <div>
-                <i class="fa-brands fa-app-store"></i>
-                <h2>Testing & Debugging</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     provident itaque! Alias dolorem excepturi eligendi tempore nam vel et.</p>
-                <a href="">Learn More</a>
+            <div class="services-box">
+                <i class="fa-solid fa-chart-simple"></i>
+                <h3>SaaS Development</h3>
+                <p>Designing and building scalable Software as a Service (SaaS) solutions.</p>
+                <p>Implementing user subscription models, data analytics, and dashboard systems.</p>
+                <p>Experience with multi-tenant architecture and AWS cloud services.</p>
             </div>
         </div>
     </div>
-   </div>
+</section>
+
    <!----Portofolio-->
    <div id="portofolio">
     <div class="container">
-        <h1 class="sub-title">My Work</h1>
+        <h1 class="sub-title">Latest Projects</h1>
         <div class="work-list">
             <div class="work">
                 <img src="/images/work-1.png">
                 <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nobis at quae eveniet illum atque.</p>
-                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>Dashboard</h3>
+                    <p>About
+                        This project is a simple Next.js web application that displays website visit statistics and customer data from a CRM system using the Mockaroo API</p>
+                    <a href="https://crm-system-web-analytics-xdee-bkgawlc3z-lilylilians-projects.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="/images/work-2.png">
                 <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nobis at quae eveniet illum atque.</p>
-                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>Cinnamon</h3>
+                    <p>A landing page showing the FE skills using css and html</p>
+                    <a href="https://cinnamon-next-project-8yy84vaxo-lily-lilian.vercel.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="/images/work-3.png">
                 <div class="layer">
-                    <h3>Social Media App</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur nobis at quae eveniet illum atque.</p>
-                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h3>MSC explora</h3>
+                    <p>MSC Explora Journeys project, contributing to its development and success. </p>
+                    <a href="https://explorajourneys.com/int/fr/ships/explora-I"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
@@ -153,7 +159,6 @@
                     <textarea name="Message" rows="6" name="Message" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
                 </form>
-                <span id="msg">Hello</span>
             </div>
         </div>
     </div>
@@ -161,48 +166,8 @@
         <p>Copyright @ Liliane. Made with <i class="fa-solid fa-heart"></i> </p>
     </div>
    </div>
-   <script>
-     var tabLinks = document.getElementsByClassName("tab-links");
-     var tabContents = document.getElementsByClassName("tab-contents");
-
-     function opentab(tabname){
-        for(tabLink of tabLinks){
-            tabLink.classList.remove("active-link")
-        }
-        for(tabContent of tabContents){
-            tabContent.classList.remove("active-tab")
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-   </script>
-   <script>
-    var sidemenu = document.getElementById("sidemenu");
-    function openmenu(){
-        sidemenu.style.right = "0";
-    }
-    function closemenu(){
-        sidemenu.style.right = "-200px";
-    }
-   </script>
-
-   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycby8PXtxYN7zt70xZhUG83y-ABmS00BCT5iBdnNsPWyM6iyCwknQFwrD91D5tIZ-ns9mHQ/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+   <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   <script src="./js/main.js"></script>
 </body>
 </html>
