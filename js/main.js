@@ -88,7 +88,7 @@ window.addEventListener('scroll', function () {
   /*-----typed js-----*/
   document.addEventListener('DOMContentLoaded', function () {
     const typed = new Typed('.multiple-text', {
-        strings: ['Frontend Developer', 'Backend Developer', 'Unit Tester'],
+        strings: ['Frontend Developer', 'Backend Developer', 'UI/UX Designer'],
         typeSpeed: 100,
         backSpeed: 100,
         backDelay: 1000,  
