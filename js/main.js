@@ -14,9 +14,11 @@ function opentab(tabname){
 var sideMenu = document.getElementById("sidemenu");
 function openmenu(){
    sideMenu.style.right = "0";
+   console.log("Menu opened");
 }
 function closemenu(){
-   sideMenu.style.right = "-200px";
+   sideMenu.style.right = "-250px";
+   console.log("Menu closed");
 }
 document.addEventListener('DOMContentLoaded', () => {
 const cards = document.querySelectorAll('.card');
@@ -47,6 +49,9 @@ function animateCards() {
 
 // Event listener for scroll
 window.addEventListener('scroll', animateCards);
+
+const menuButton = document.querySelector('.fa-bars');
+menuButton.addEventListener('click', openmenu);
 });
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycby8PXtxYN7zt70xZhUG83y-ABmS00BCT5iBdnNsPWyM6iyCwknQFwrD91D5tIZ-ns9mHQ/exec'
@@ -95,3 +100,25 @@ window.addEventListener('scroll', function () {
         loop: true         
     });
 });
+
+// Function to check if the element is in the viewport
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    );
+}
+
+// Animate sections on scroll
+function animateSections() {
+    const sections = document.querySelectorAll('section'); // Select all sections
+    sections.forEach(section => {
+        if (isInViewport(section)) {
+            section.classList.add('visible'); // Add visible class
+        }
+    });
+}
+
+// Event listener for scroll
+window.addEventListener('scroll', animateSections);
